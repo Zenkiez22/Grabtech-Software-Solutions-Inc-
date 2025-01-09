@@ -1,0 +1,22 @@
+body {
+    background-color: maroon;
+}
+.nav-sjcr {
+    position: sticky;
+    display: flex;
+    background-color: rgb(68, 0, 0);
+    width: 100%;
+}
+.nav-sjcr-btn {
+    padding: 10px;
+}
+a, .nav-sjcr {
+    text-decoration: none;
+    list-style-type: none;
+    color: white;
+    margin: 0;
+    
+}
+.nav-sjcr-btn:hover {
+    background-color: rgb(51, 0, 0);
+}

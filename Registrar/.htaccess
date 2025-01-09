@@ -1,0 +1,10 @@
+# Enable RewriteEngine
+RewriteEngine On
+
+# Redirect requests for index.php to the root folder
+RewriteRule ^index\\.php$ / [L,R=301]
+
+# Remove .php extension from URLs
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([a-zA-Z0-9_-]+)$ $1.php [L,QSA]
